@@ -49,6 +49,8 @@ nav {
     color: rgb(158, 91, 8);
 }
 
+/* Estilização da página de conteúdo */
+
 #conteudo {
     display: flex;
     flex-direction: column;
@@ -98,3 +100,14 @@ address > a {
     object-fit: fill;
 }
 
+/* Estilização da página de conhecimentos */
+
+#conhecimentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 75vw;
+    padding-left: 30px;
+    padding-right: 70px;
+}
