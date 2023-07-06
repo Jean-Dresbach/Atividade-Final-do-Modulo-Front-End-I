@@ -56,12 +56,12 @@ nav {
     align-items: flex-start;
     width: 75vw;
     padding-left: 30px;
+    padding-right: 70px;
 }
 
 h1 {
     font-family: 'Anton', sans-serif;
     font-size: 60px;
-    margin-bottom: 10px;
 
 }
 
@@ -72,10 +72,16 @@ h1 > span {
 address {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    margin-bottom: 30px;
+    font-size: 13px;
+    margin-bottom: 50px;
 }
 
 address > a {
     font-weight: bolder;
     color: rgb(158, 91, 8);   
+}
+
+.descricao, p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
 }
