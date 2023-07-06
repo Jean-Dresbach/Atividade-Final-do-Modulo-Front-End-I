@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: 100vh;
+    background-color: #000000e0;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.imagem-redonda {
+    border-radius: 50%;
+    border: 3px solid rgb(158, 91, 8);
+    width: 15vw;
+}
+
+#button-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.button {
+    color: white;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem;
+}
+
+.button:hover {
+    color: rgb(158, 91, 8);
+}
+
+#conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 75vw;
+    padding-left: 30px;
+    padding-right: 70px;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+
+}
+
+h1 > span {
+    color: rgb(158, 91, 8);
+}
+
+address {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    margin-bottom: 50px;
+}
+
+address > a {
+    font-weight: bolder;
+    color: rgb(158, 91, 8);   
+}
+
+.descricao, p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+#icons {
+    display: flex;
+    gap: 25px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    object-fit: fill;
+}
+
