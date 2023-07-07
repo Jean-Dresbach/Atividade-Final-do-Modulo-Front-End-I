@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conhecimentos</title>
     <link rel="stylesheet" href="./styles.css">
+    
 </head>
 <body>
     <aside>
@@ -13,50 +14,41 @@
                 <img class="imagem-redonda" src="./images/foto de perfil.jpg" alt="Foto de perfil">
             </div>
             <section id="button-links">
-                <a class="button" href="./index.html">SOBRE</a>
-                <a class="button" href="./conhecimentos.html">CONHECIMENTOS</a>
-                <a class="button" href="./objetivos.html">OBJETIVOS</a>
+                <a class="page-button" href="./index.html">SOBRE</a>
+                <a class="page-button" href="./conhecimentos.html">CONHECIMENTOS</a>
+                <a class="page-button" href="./objetivos.html">OBJETIVOS</a>
             </section>
         </nav>
     </aside>
     <main id="conhecimentos">
-        <section>
-            <ol type="A">
-                <li>Ferramentas para desenvolvimento web
-                    <ul>
-                        <li><img class="icon" src="./images/icons/html-5.png" alt="Icon HTML5"></li>
-                        <li><img class="icon" src="./images/icons/css-3.png" alt="Icon CSS3"></li>
-                        <li><img class="icon" src="./images/icons/js.png" alt="Icon Javascript"></li>
-                        <li><img class="icon" src="./images/icons/git.png" alt="Icon Git"></li>
-                    </ul>
-                </li>
-                <li>Aplicativos para escritório
-                    <ul>
-                        <li>Google
-                            <ul>
-                                <li><img class="icon" src="./images/icons/google gmail.png" alt="Icon Gmail"></li>
-                                <li><img class="icon" src="./images/icons/google meet.png" alt="Icon Google Meet"></li>
-                                <li><img class="icon" src="./images/icons/google drive.png" alt="Icon Google Drive"></li>
-                                <li><img class="icon" src="./images/icons/google docs.png" alt="Icon Google Docs"></li>
-                                <li><img class="icon" src="./images/icons/google sheets.png" alt="Icon Google Sheets"></li>
-                                <li><img class="icon" src="./images/icons/google slides.png" alt="Icon Google Slides"></li>
-                            </ul>
-                        </li>
-                        <li>Microsoft
-                            <ul>
-                                <li><img class="icon" src="./images/icons/Microsoft word.png" alt="Icon Microsoft Pord"></li>
-                                <li><img class="icon" src="./images/icons/Microsoft powerpoint.png" alt="Icon Microsoft Powerpoint"></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>Ferramentas de edição de mídia
-                    <ul>
-                        <li><img class="icon" src="./images/icons/canva.png" alt="Icon Canva"></li>
-                    </ul>
-                </li>
-            </ol>
-        </section>
+        <ol type="A" id="lista-conhecimentos">
+            <li>Ferramentas para desenvolvimento web</li>
+            <div id="icons-container">
+                <img class="icon" src="./images/icons/html-5.png" alt="Icon HTML5">
+                <img class="icon" src="./images/icons/css-3.png" alt="Icon CSS3">
+                <img class="icon" src="./images/icons/js.png" alt="Icon Javascript">
+                <img class="icon" src="./images/icons/git.png" alt="Icon Git">
+            </div>
+            <li>Aplicativos para escritório</li>
+                <span>Google</span>
+                    <div id="icons-container">
+                        <img class="icon" src="./images/icons/google gmail.png" alt="Icon Gmail">
+                        <img class="icon" src="./images/icons/google meet.png" alt="Icon Google Meet">
+                        <img class="icon" src="./images/icons/google drive.png" alt="Icon Google Drive">
+                        <img class="icon" src="./images/icons/google docs.png" alt="Icon Google Docs">
+                        <img class="icon" src="./images/icons/google sheets.png" alt="Icon Google Sheets">
+                        <img class="icon" src="./images/icons/google slides.png" alt="Icon Google Slides">
+                    </div>
+                <span>Microsoft</span>
+                    <div id="icons-container">
+                        <img class="icon" src="./images/icons/Microsoft word.png" alt="Icon Microsoft Pord">
+                        <img class="icon" src="./images/icons/Microsoft powerpoint.png" alt="Icon Microsoft Powerpoint">
+                    </div>
+            <li>Ferramentas de edição de mídia</li>
+            <div id="icons-container">
+                <img class="icon" src="./images/icons/canva.png" alt="Icon Canva">
+            </div>
+        </ol>
     </main>
 </body>
 </html>

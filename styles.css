@@ -38,20 +38,19 @@ nav {
     gap: 30px;
 }
 
-.button {
+.page-button {
     color: white;
     font-weight: bolder;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.125rem;
+    font-size: 18px;
+    text-decoration: none;
 }
 
-.button:hover {
+.page-button:hover {
     color: rgb(158, 91, 8);
 }
 
-/* Estilização da página de conteúdo */
-
-#conteudo {
+#conteudo, #conhecimentos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,7 +63,6 @@ nav {
 h1 {
     font-family: 'Anton', sans-serif;
     font-size: 60px;
-
 }
 
 h1 > span {
@@ -86,12 +84,8 @@ address > a {
 .descricao, p {
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
+    font-size: 18px;
     margin-bottom: 40px;
-}
-
-#icons {
-    display: flex;
-    gap: 25px;
 }
 
 .icon {
@@ -100,14 +94,25 @@ address > a {
     object-fit: fill;
 }
 
-/* Estilização da página de conhecimentos */
-
-#conhecimentos {
+#icons-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 75vw;
-    padding-left: 30px;
-    padding-right: 70px;
+    gap: 25px;
+    margin: 20px 0px;
+}
+
+#lista-conhecimentos {
+    margin-left: 30px;
+}
+
+ol > li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+ol > span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
 }
