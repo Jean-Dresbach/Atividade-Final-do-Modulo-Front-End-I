@@ -48,14 +48,17 @@ nav {
     transform: scale(1.2); 
 }
 
-#about-me, #my-knowledge {
+#about-me, #my-knowledge, #my-objectives {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 75vw;
+    width: 70vw;
     padding-left: 4rem;
     padding-right: 7rem;
+    background-image: url(./images/icons/coffee_cup.png);
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -100,6 +103,7 @@ address {
 h2 {
     font-family: 'Anton', sans-serif;
     font-size: 2rem;
+    margin-bottom: 1.5rem;
     color: rgb(158, 91, 8);
 }
 
@@ -117,25 +121,25 @@ h2 {
 #container-icons {
     display: flex;
     gap: 3rem;
-    margin: 2rem 0rem;
     flex-wrap: wrap;
-}
-
-#knowledge-list {
-    margin-left: 3rem;
-}
-
-ol > li {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    font-weight: bolder;
     margin-bottom: 1rem;
 }
 
-ol > span {
+#knowledge-list, #objectives-list {
+    margin-left: 3rem;
     font-family: 'Montserrat', sans-serif;
+}
+
+.main-line {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+.secondary-line {
     font-size: 1.6rem;
-    font-weight: bold;
+    display: block;
+    margin-bottom: 2rem;
 }
 
 .icons-dropdown {
