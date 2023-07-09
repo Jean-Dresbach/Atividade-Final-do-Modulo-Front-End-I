@@ -183,10 +183,7 @@ h2 {
     }
 
     .circle-image {
-        height: 7rem;
-        width: 7rem;
-        object-fit: fill;
-        border: .1rem solid rgb(201, 116, 12);
+        display: none;
     }
 
     #about-me, #my-knowledge, #my-objectives {
@@ -196,10 +193,6 @@ h2 {
 }
 
 @media(max-width: 650px) {
-    .circle-image {
-        display: none;
-    }
-
     nav {
         flex-direction: column;
         height: 30vh;
