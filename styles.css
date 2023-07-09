@@ -56,9 +56,6 @@ nav {
     width: 70vw;
     padding-left: 4rem;
     padding-right: 7rem;
-    background-image: url(./images/icons/coffee_cup.png);
-    background-position: center center;
-    background-repeat: no-repeat;
 }
 
 h1 {
@@ -171,4 +168,44 @@ h2 {
 
 .icons-dropdown:hover .icons-content-dropdown {
     display: block;
+}
+
+
+@media(max-width: 1150px) {
+    body {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: row;
+        height: 20vh;
+        width: 100vw;
+    }
+
+    .circle-image {
+        height: 7rem;
+        width: 7rem;
+        object-fit: fill;
+        border: .1rem solid rgb(201, 116, 12);
+    }
+
+    #about-me, #my-knowledge, #my-objectives {
+        width: 100vw;
+        padding: 3rem 7rem;
+    }
+}
+
+@media(max-width: 650px) {
+    .circle-image {
+        display: none;
+    }
+
+    nav {
+        flex-direction: column;
+        height: 30vh;
+    }
+
+    #about-me, #my-knowledge, #my-objectives {
+        padding: 3rem 3rem;
+    }
 }
