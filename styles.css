@@ -82,6 +82,7 @@ address {
     font-weight: bolder;
     color: rgb(158, 91, 8);   
     transition: transform .2s;
+    position: relative;
 }
 
 #email:hover {
@@ -113,7 +114,6 @@ h2 {
     height: 5rem;
     object-fit: fill;
     transition: transform .2s;
-    z-index: -1;
 }
 
 .icon:hover {
@@ -200,6 +200,7 @@ h2 {
 @media(max-width: 650px) {
     nav {
         justify-content: space-between;
+        z-index: 1;
     }
 
     #circular-image {
@@ -269,7 +270,7 @@ h2 {
     #dropdown:hover #icon-menu {
         background-color: rgb(201, 116, 12);
     }
-    
+
     #about-me, #my-knowledge, #my-objectives {
         padding: 3rem 3rem;
     }
