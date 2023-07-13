@@ -28,7 +28,7 @@ nav {
     gap: 4rem;
 }
 
-.circle-image {
+#circular-image {
     border-radius: 50%;
     border: .3rem solid rgb(201, 116, 12);
     width: 15vw;
@@ -187,8 +187,8 @@ h2 {
         width: 100vw;
     }
 
-    .circle-image {
-        display: none;
+    #circular-image {
+        width: 7rem;
     }
 
     #about-me, #my-knowledge, #my-objectives {
@@ -202,7 +202,7 @@ h2 {
         justify-content: space-between;
     }
 
-    .circle-image {
+    #circular-image {
         margin-left: 3rem;
     }
 
