@@ -48,7 +48,7 @@ nav {
     transform: scale(1.2); 
 }
 
-#dropdown, #background-blur {
+#dropdown-menu, #dropdown-menu-background-blur {
     display: none;
 }
 
@@ -82,13 +82,10 @@ address {
     font-weight: bolder;
     color: rgb(158, 91, 8);   
     transition: transform .2s;
-    position: relative;
 }
 
 #email:hover {
     transform: scale(1.2); 
-    display: inline-block;
-    position: absolute;
     border-radius: 0.5rem;
     background-color: white;
     padding: 0.7rem;
@@ -144,18 +141,18 @@ h2 {
     margin-bottom: 2rem;
 }
 
-.icons-dropdown {
+.dropdown-icons {
     position: relative;
     display: inline-block;
 }
  
-.icon-items-container-dropdown {
+.dropdown-icons-content-aligner {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.icons-content-dropdown {
+.dropdown-icons-content {
     display: none;
     margin-top: 4rem;
     position: absolute;
@@ -163,7 +160,7 @@ h2 {
     box-shadow: 0rem 0.8rem 1.6rem 0rem rgba(0,0,0,0.2);
 }
   
-.icons-content-dropdown span {
+.dropdown-icons-content span {
     color: black;
     padding: 0.8rem;
     font-size: 1.3rem;
@@ -171,7 +168,7 @@ h2 {
     display: block;
 }
 
-.icons-dropdown:hover .icons-content-dropdown {
+.dropdown-icons:hover .dropdown-icons-content {
     display: block;
 }
 
@@ -211,7 +208,7 @@ h2 {
         display: none;
     }
 
-    #icon-menu {
+    #menu-icon {
         width: 6rem;
         height: 6rem;
         object-fit: cover;
@@ -223,12 +220,12 @@ h2 {
         margin-right: 3rem;
     }
 
-    #dropdown {
+    #dropdown-menu {
         display: inline-block;
         position: relative;
     }
 
-    #background-blur {
+    #dropdown-menu-background-blur {
         position: absolute;
         display: none;
         right: 0;
@@ -239,7 +236,7 @@ h2 {
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
     }
 
-    #dropdown-content {
+    #dropdown-menu-content {
         box-sizing: border-box;
         position: absolute;
         right: 0;
@@ -255,19 +252,19 @@ h2 {
         z-index: 1;
     }
 
-    #dropdown-content > a {
+    #dropdown-menu-content > a {
         display: inline-block;
     }    
 
-    #dropdown:hover + #background-blur {
+    #dropdown-menu:hover + #dropdown-menu-background-blur {
         display: block;
     }
 
-    #dropdown:hover #dropdown-content {
+    #dropdown-menu:hover #dropdown-menu-content {
         display: flex;
     }
 
-    #dropdown:hover #icon-menu {
+    #dropdown-menu:hover #menu-icon {
         background-color: rgb(201, 116, 12);
     }
 
