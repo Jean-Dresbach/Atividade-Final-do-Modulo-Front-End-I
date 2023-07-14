@@ -17,7 +17,7 @@ body {
     box-sizing: border-box;
 }
 
-nav {
+menu {
     display: flex;
     flex-direction: column;
     width: 30vw;
@@ -46,6 +46,15 @@ nav {
 .page-link:hover {
     color: rgb(201, 116, 12);
     transform: scale(1.2); 
+}
+
+.current-page {
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: rgb(201, 116, 12);
+    font-size: 2.16rem;
+    cursor: default;
 }
 
 #dropdown-menu, #dropdown-menu-background-blur {
@@ -178,7 +187,7 @@ h2 {
         flex-direction: column;
     }
 
-    nav {
+    menu {
         flex-direction: row;
         height: 10rem;
         width: 100vw;
@@ -195,7 +204,7 @@ h2 {
 }
 
 @media(max-width: 650px) {
-    nav {
+    menu {
         justify-content: space-between;
         z-index: 1;
     }
@@ -204,7 +213,7 @@ h2 {
         margin-left: 3rem;
     }
 
-    .page-link {
+    .page-link, .current-page {
         display: none;
     }
 
