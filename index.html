@@ -6,31 +6,38 @@
         <title>ABOUT ME</title>
         <link rel="stylesheet" href="./styles.css">
     </head>
-    <body>
+    <body>    
         <menu>
-            <nav>
-                <img class="circle-image" src="./images/profile picture.jpg" alt="My rofile picture">
-                <a class="page-link" href="./index.html">ABOUT ME</a>
-                <a class="page-link" href="./my-knowledge.html">MY KNOWLEDGE</a>
-                <a class="page-link" href="./my-goals.html">MY GOALS</a>
-            </nav>
+            <img id="circular-image" src="./images/profile picture.jpg" alt="My rofile picture">
+            <a class="current-page" href="#">ABOUT ME</a>
+            <a class="page-link" href="./my-knowledge.html">MY KNOWLEDGE</a>
+            <a class="page-link" href="./my-goals.html">MY GOALS</a>
+            <div id="dropdown-menu">
+                <img id="menu-icon" src="./images/icons/icon-menu.png" alt="Icon menu">
+                <div id="dropdown-menu-content">
+                    <a class="current-page" href="#">ABOUT ME</a>
+                    <a class="page-link" href="./my-knowledge.html">MY KNOWLEDGE</a>
+                    <a class="page-link" href="./my-goals.html">MY GOALS</a>
+                </div>
+            </div>
+            <div id="dropdown-menu-background-blur"></div>
         </menu>
         <main id="about-me">
             <section>
                 <h1>JEAN RAF<span>AEL DRESBACH</span></h1>
-                <address>SANTA HELENA STREET, 20, APARTMENT-202, CENTENÁRIO, SAPIRANGA-RS; TELEPHONE: (51)99993-6491; <a id="email" href="mailto:jeand.rafael@gmail.com">EMAIL</a></address>
+                <address>SANTA HELENA STREET, 20, APARTMENT-202, CENTENÁRIO, SAPIRANGA-RS; TELEPHONE: (51)99993-6491; <a id="email" href="mailto:jeand.rafael@gmail.com">jeand.rafael@gmail.com</a></address>
             </section>
             <section id="my-description">
-                <p>So far, I have had plenty of experiences with customer service and creation and development of group projects (as part of my communication skills I have advanced english and native portuguese). I am currently studying programming at Growdev, where I am part of the sixteenth class of the Starter Full Stack Web Developer program and by the end of the course, I will have developed skills in the areas of Font-end and Back-end and learnt technologies as: HTML5, CSS3, Javascript, Git, Bootstrap, React, TypeScript e NodeJS.</p>
+                <p>So far, I have had plenty of experience with customer service and the creation and development of group projects. As part of my communication skills, I have advanced English and native Portuguese proficiency. Currently, I am studying programming at Growdev and I am a member of the sixteenth class of the Starter Full Stack Web Developer program. By the end of the course, I will have developed skills in Font-end and Back-end development and learned technologies such as HTML5, CSS3, Javascript, Git, Bootstrap, React, TypeScript, and NodeJS.</p>
             </section>
             <h2>Let's connect:</h2>
-            <section id="container-icons">
+            <div id="container-icons">
                 <a href="https://www.linkedin.com/in/jean-dresbach" target="_blank"><img class="icon" src="./images/icons/linkedin.png" alt="Link to my linkedin"></a>
                 <a href="https://twitter.com/JeansLegal" target="_blank"><img class="icon" src="./images/icons/twitter.png" alt="Link to my twitter"></a>
-                <a class="icon" href="https://github.com/Jean-Dresbach" target="_blank"><img class="icon" src="./images/icons/github.png" alt="Link to my github"></a>
+                <a href="https://github.com/Jean-Dresbach" target="_blank"><img class="icon" src="./images/icons/github.png" alt="Link to my github"></a>
                 <a href="https://www.facebook.com/profile.php?id=100014542417927&mibextid=ZbWKwL" target="_blank"><img class="icon" src="./images/icons/facebook.png" alt="Link to my facebook"></a>
                 <a href="https://instagram.com/jeanr.dresbach?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><img class="icon" src="./images/icons/instagram.png" alt="Link to my instagram"></a>
-            </section>
+            </div>
         </main>
     </body>
 </html>

@@ -17,7 +17,7 @@ body {
     box-sizing: border-box;
 }
 
-nav {
+menu {
     display: flex;
     flex-direction: column;
     width: 30vw;
@@ -28,7 +28,7 @@ nav {
     gap: 4rem;
 }
 
-.circle-image {
+#circular-image {
     border-radius: 50%;
     border: .3rem solid rgb(201, 116, 12);
     width: 15vw;
@@ -46,6 +46,19 @@ nav {
 .page-link:hover {
     color: rgb(201, 116, 12);
     transform: scale(1.2); 
+}
+
+.current-page {
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: rgb(201, 116, 12);
+    font-size: 2.16rem;
+    cursor: default;
+}
+
+#dropdown-menu, #dropdown-menu-background-blur {
+    display: none;
 }
 
 #about-me, #my-knowledge, #my-objectives {
@@ -82,8 +95,6 @@ address {
 
 #email:hover {
     transform: scale(1.2); 
-    display: inline-block;
-    position: absolute;
     border-radius: 0.5rem;
     background-color: white;
     padding: 0.7rem;
@@ -139,18 +150,18 @@ h2 {
     margin-bottom: 2rem;
 }
 
-.icons-dropdown {
+.dropdown-icons {
     position: relative;
     display: inline-block;
 }
  
-.icon-items-container-dropdown {
+.dropdown-icons-content-aligner {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.icons-content-dropdown {
+.dropdown-icons-content {
     display: none;
     margin-top: 4rem;
     position: absolute;
@@ -158,7 +169,7 @@ h2 {
     box-shadow: 0rem 0.8rem 1.6rem 0rem rgba(0,0,0,0.2);
 }
   
-.icons-content-dropdown span {
+.dropdown-icons-content span {
     color: black;
     padding: 0.8rem;
     font-size: 1.3rem;
@@ -166,7 +177,7 @@ h2 {
     display: block;
 }
 
-.icons-dropdown:hover .icons-content-dropdown {
+.dropdown-icons:hover .dropdown-icons-content {
     display: block;
 }
 
@@ -176,14 +187,14 @@ h2 {
         flex-direction: column;
     }
 
-    nav {
+    menu {
         flex-direction: row;
-        height: 20vh;
+        height: 10rem;
         width: 100vw;
     }
 
-    .circle-image {
-        display: none;
+    #circular-image {
+        width: 7rem;
     }
 
     #about-me, #my-knowledge, #my-objectives {
@@ -193,9 +204,77 @@ h2 {
 }
 
 @media(max-width: 650px) {
-    nav {
+    menu {
+        justify-content: space-between;
+        z-index: 1;
+    }
+
+    #circular-image {
+        margin-left: 3rem;
+    }
+
+    .page-link, .current-page {
+        display: none;
+    }
+
+    #menu-icon {
+        width: 6rem;
+        height: 6rem;
+        object-fit: cover;
+        box-sizing: border-box;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 1rem;
+        padding: .5rem;
+        margin-right: 3rem;
+    }
+
+    #dropdown-menu {
+        display: inline-block;
+        position: relative;
+    }
+
+    #dropdown-menu-background-blur {
+        position: absolute;
+        display: none;
+        right: 0;
+        top: 10rem;
+        width: 60vw;
+        height: 50vh;
+        background-color: rgba(62, 62, 62, 0.9);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    }
+
+    #dropdown-menu-content {
+        box-sizing: border-box;
+        position: absolute;
+        right: 0;
+        top: -1.9rem;
+        padding-top: 10rem;
+        display: none;
         flex-direction: column;
-        height: 30vh;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        width: 60vw;
+        height: calc(50vh + 10rem);
+        z-index: 1;
+    }
+
+    #dropdown-menu-content > a {
+        display: inline-block;
+    }    
+
+    #dropdown-menu:hover + #dropdown-menu-background-blur {
+        display: block;
+    }
+
+    #dropdown-menu:hover #dropdown-menu-content {
+        display: flex;
+    }
+
+    #dropdown-menu:hover #menu-icon {
+        background-color: rgb(201, 116, 12);
     }
 
     #about-me, #my-knowledge, #my-objectives {

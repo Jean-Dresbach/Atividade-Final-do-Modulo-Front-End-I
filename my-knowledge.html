@@ -8,45 +8,52 @@
     </head>
     <body>
         <menu>
-            <nav>
-                <img class="circle-image" src="./images/profile picture.jpg" alt="My rofile picture">
-                <a class="page-link" href="./index.html">ABOUT ME</a>
-                <a class="page-link" href="./my-knowledge.html">MY KNOWLEDGE</a>
-                <a class="page-link" href="./my-goals.html">MY GOALS</a>
-            </nav>
+            <img id="circular-image" src="./images/profile picture.jpg" alt="My rofile picture">
+            <a class="page-link" href="./index.html">ABOUT ME</a>
+            <a class="current-page" href="#">MY KNOWLEDGE</a>
+            <a class="page-link" href="./my-goals.html">MY GOALS</a>
+            <div id="dropdown-menu">
+                <img id="menu-icon" src="./images/icons/icon-menu.png" alt="Icon menu">
+                <div id="dropdown-menu-content">
+                    <a class="page-link" href="./index.html">ABOUT ME</a>
+                    <a class="current-page" href="#">MY KNOWLEDGE</a>
+                    <a class="page-link" href="./my-goals.html">MY GOALS</a>
+                </div>
+            </div>
+            <div id="dropdown-menu-background-blur"></div>
         </menu>
         <main id="my-knowledge">
             <ol type="A" id="knowledge-list">
                 <li class="main-line">Web development tools</li>
                 <div id="container-icons">
-                    <div class="icons-dropdown">
-                        <div class="icon-items-container-dropdown">
+                    <div class="dropdown-icons">
+                        <div class="dropdown-icons-content-aligner">
                             <img class="icon" src="./images/icons/html-5.png" alt="Icon HTML5">
-                            <div class="icons-content-dropdown">
+                            <div class="dropdown-icons-content">
                                 <span>HTML5</span>
                             </div>
                         </div>
                     </div>
-                    <div class="icons-dropdown">
-                        <div class="icon-items-container-dropdown">
+                    <div class="dropdown-icons">
+                        <div class="dropdown-icons-content-aligner">
                             <img class="icon" src="./images/icons/css-3.png" alt="Icon CSS3">
-                            <div class="icons-content-dropdown">
+                            <div class="dropdown-icons-content">
                                 <span>CSS3</span>
                             </div>
                         </div>
                     </div>
-                    <div class="icons-dropdown">
-                        <div class="icon-items-container-dropdown">
+                    <div class="dropdown-icons">
+                        <div class="dropdown-icons-content-aligner">
                             <img class="icon" src="./images/icons/js.png" alt="Icon Javascript">
-                            <div class="icons-content-dropdown">
+                            <div class="dropdown-icons-content">
                                 <span>JAVASCRIPT</span>
                             </div>
                         </div>
                     </div>
-                    <div class="icons-dropdown">
-                        <div class="icon-items-container-dropdown">
+                    <div class="dropdown-icons">
+                        <div class="dropdown-icons-content-aligner">
                             <img class="icon" src="./images/icons/git.png" alt="Icon Git">
-                            <div class="icons-content-dropdown">
+                            <div class="dropdown-icons-content">
                                 <span>GIT</span>
                             </div>
                         </div>
@@ -55,50 +62,50 @@
                 <li class="main-line">Office applications</li>
                     <span class="secondary-line">Google</span>
                         <div id="container-icons">
-                            <div class="icons-dropdown">
-                                <div class="icon-items-container-dropdown">
+                            <div class="dropdown-icons">
+                                <div class="dropdown-icons-content-aligner">
                                     <img class="icon" src="./images/icons/google gmail.png" alt="Icon Gmail">
-                                    <div class="icons-content-dropdown">
+                                    <div class="dropdown-icons-content">
                                         <span>GMAIL</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="icons-dropdown">
-                                <div class="icon-items-container-dropdown">
+                            <div class="dropdown-icons">
+                                <div class="dropdown-icons-content-aligner">
                                     <img class="icon" src="./images/icons/google meet.png" alt="Icon Google Meet">
-                                    <div class="icons-content-dropdown">
+                                    <div class="dropdown-icons-content">
                                         <span>MEET</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="icons-dropdown">
-                                <div class="icon-items-container-dropdown">
+                            <div class="dropdown-icons">
+                                <div class="dropdown-icons-content-aligner">
                                     <img class="icon" src="./images/icons/google drive.png" alt="Icon Google Drive">
-                                    <div class="icons-content-dropdown">
+                                    <div class="dropdown-icons-content">
                                         <span>DRIVE</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="icons-dropdown">
-                                <div class="icon-items-container-dropdown">
+                            <div class="dropdown-icons">
+                                <div class="dropdown-icons-content-aligner">
                                     <img class="icon" src="./images/icons/google docs.png" alt="Icon Google Docs">
-                                    <div class="icons-content-dropdown">
+                                    <div class="dropdown-icons-content">
                                         <span>DOCS</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="icons-dropdown">
-                                <div class="icon-items-container-dropdown">
+                            <div class="dropdown-icons">
+                                <div class="dropdown-icons-content-aligner">
                                     <img class="icon" src="./images/icons/google sheets.png" alt="Icon Google Sheets">
-                                    <div class="icons-content-dropdown">
+                                    <div class="dropdown-icons-content">
                                         <span>SHEETS</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="icons-dropdown">
-                                <div class="icon-items-container-dropdown">
+                            <div class="dropdown-icons">
+                                <div class="dropdown-icons-content-aligner">
                                     <img class="icon" src="./images/icons/google slides.png" alt="Icon Google Slides">
-                                    <div class="icons-content-dropdown">
+                                    <div class="dropdown-icons-content">
                                         <span>SLIDES</span>
                                     </div>
                                 </div>
@@ -106,18 +113,18 @@
                         </div>
                     <span class="secondary-line">Microsoft</span>
                         <div id="container-icons">
-                            <div class="icons-dropdown">
-                                <div class="icon-items-container-dropdown">
+                            <div class="dropdown-icons">
+                                <div class="dropdown-icons-content-aligner">
                                     <img class="icon" src="./images/icons/Microsoft word.png" alt="Icon Microsoft Word">
-                                    <div class="icons-content-dropdown">
+                                    <div class="dropdown-icons-content">
                                         <span>WORD</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="icons-dropdown">
-                                <div class="icon-items-container-dropdown">
+                            <div class="dropdown-icons">
+                                <div class="dropdown-icons-content-aligner">
                                     <img class="icon" src="./images/icons/Microsoft powerpoint.png" alt="Icon Microsoft Powerpoint">
-                                    <div class="icons-content-dropdown">
+                                    <div class="dropdown-icons-content">
                                         <span>POWERPOINT</span>
                                     </div>
                                 </div>
